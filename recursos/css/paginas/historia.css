@@ -1,0 +1,57 @@
+a#home{
+    position: fixed; top: 0px; right: 0px;
+    padding: 0px 0.5em;
+}
+nav{
+    background-image: url(../../imagenes/chicken-4849979.jpg);
+}
+#titulo{
+    color: black;
+    -webkit-text-stroke: 0.0001em white;
+}
+nav p{
+    color: black;
+    background-color: white;
+    padding: 0.8em;
+}
+section{
+    width: 100%;
+    background-color: black;
+}
+@media (min-width:700px){
+    section{
+        padding-top: 4em;
+    }
+}
+section div{
+    width: 100%;
+    color: gold;
+}
+section img{
+    max-width: 100%;
+}
+.par, .impar{
+    display: grid;
+    grid: 1fr 4fr / 1fr 1fr;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.par h3{
+    grid-area: 1/1/1/1;
+}
+.par p{
+    grid-area: 2/1/2/1;
+}
+.par img{
+    grid-area: 1/2/span 2/span 1;
+}
+.impar h3{
+    grid-area: 1/2/1/2;
+}
+.impar p{
+    grid-area: 2/2/2/2;
+}
+.impar img{
+    grid-area: 1/1/span 2/span 1;
+}

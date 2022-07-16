@@ -2,182 +2,357 @@
     font-family: "titulo";
     src: url(../fuentes/RobotoCondensed-Regular.ttf);
 }
-*{
-    margin: 0px;
-    font-family: "titulo";
+@media (min-width:700px){
+    *{
+        margin: 0px;
+        font-family: "titulo";
+    }
+    #menu{
+        display: inline-flex;
+        position:fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 3;
+        align-items: center;
+    }
+    #menu a{
+        padding: 19.8px 50px;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+    #menu a:hover{
+        color: white;
+    }
+    #lmitos{
+        background-color: palevioletred !important;
+    }
+    #lactua{
+        background-color: powderblue !important;
+    }
+    #lcontacto{
+        background-color: sandybrown !important;
+    }
+    body{
+        margin: 0px;
+    }
+    header{
+        position: sticky;
+        top: 0px;
+        display:inline-flex;
+        width: 100%;
+        z-index: 2;
+    }
+    #nombre{
+        width: 100%;
+        padding: 10px 50px;
+        background-color: #F4F6F6;
+        position: sticky;
+        top:  0px;
+        display:inline-flex;
+    }
+    #nombre h1 em{
+        color: gold;
+        background-color: black;
+        padding: 0.05em 0.2em;
+    }
+    header img{
+        max-height: 2.4em;
+        margin-right: 2.5em;
+    }
+    nav{
+        position: relative;
+        top: 0%;
+        margin-top: 0px;
+        background-image: url(../imagenes/fondo.png);
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #titulo{
+        color: white;
+        font-size: 6em;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+    em{
+        color: gold;
+        font-style: normal;
+    }
+    nav p{
+        color: white;
+        font-size: 1.5em;
+        font-style: italic;
+        margin: 0% 5%;
+        flex-shrink: 8;
+        text-align: right;
+    }
+    nav p em{
+        font-style: normal;
+    }
+    nav a{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        padding: 1em;
+        position: absolute;
+        top: 94%;
+        left: 10%;
+        border: solid #F4F6F6;
+        z-index: 1;
+    }
+    #opinion{
+        background-color: gold;
+        color: black;
+        padding: 1em;
+        border-top: solid black;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    section#opinion h1{
+        padding: 1.5em;
+        font-size: 2em;
+        text-decoration: underline;
+    }
+    label.opciones{
+        color: black;
+        background-color: gold;
+    }
+    form label, form p{
+        background-color: black;
+        color: white;
+        padding: 0.5em;
+        margin-right: 0px;
+        width: fit-content;
+        padding: 1em;
+    }
+    form input{
+        padding: 0.5em;
+        margin-left: 0px;
+        background-color: gold;
+        border:none;
+        border-bottom: solid black;
+    }
+    form input:hover{
+        border-bottom: solid red;
+    }
+    section#mivi{
+        display: grid;
+        grid: 1fr 1fr/1fr 0.888fr;
+        width: 100%;
+        height: fit-content;
+    }
+    section#mivi img{
+        max-width: 100%;
+        padding-bottom: 0%;
+    }
+    section#mivi div{
+        background-color: gold;
+        padding: 5%;
+        text-align: center;
+    }
+    section#mivi div h2{
+        font-size: 3em;
+    }
+    section#mivi div p{
+        font-size: 2.4em;
+    }
+    div.mision{
+        grid-area: 1/1/1/1;
+    }
+    img.mision{
+        grid-area: 1/2/1/2;
+    }
+    img.vision{
+        grid-area: 2/1/2/1;
+    }
+    div.vision{
+        grid-area: 2/2/2/2;
+    }
+    #submit{
+        color: white;
+        background-color: black;
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 1em;
+    }
+    footer{
+        background-color: #F4F6F6;
+        padding: 10px;
+    }
 }
-#menu{
-    display: inline-flex;
-    position:fixed;
-    top: 0px;
-    right: 0px;
-    z-index: 3;
-    align-items: center;
-}
-#menu a{
-    padding: 19.8px 50px;
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-}
-#menu a:hover{
-    color: white;
-}
-#lmitos{
-    background-color: palevioletred !important;
-}
-#lactua{
-    background-color: powderblue !important;
-}
-#lcontacto{
-    background-color: sandybrown !important;
-}
-body{
-    margin: 0px;
-}
-header{
-    position: sticky;
-    top: 0px;
-    display:inline-flex;
-    width: 100%;
-    z-index: 2;
-}
-#nombre{
-    width: 100%;
-    padding: 10px 50px;
-    background-color: #F4F6F6;
-    position: sticky;
-    top:  0px;
-    display:inline-flex;
-}
-#nombre h1 em{
-    color: gold;
-    background-color: black;
-    padding: 0.05em 0.2em;
-}
-header img{
-    max-height: 2.4em;
-    margin-right: 2.5em;
-}
-nav{
-    position: relative;
-    top: 0%;
-    margin-top: 0px;
-    background-image: url(../imagenes/fondo.png);
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#titulo{
-    color: white;
-    font-size: 6em;
-    padding-top: 6%;
-    padding-bottom: 6%;
-}
-em{
-    color: gold;
-    font-style: normal;
-}
-nav p{
-    color: white;
-    font-size: 1.5em;
-    font-style: italic;
-    margin: 0% 5%;
-    flex-shrink: 8;
-    text-align: right;
-}
-nav p em{
-    font-style: normal;
-}
-nav a{
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    padding: 1em;
-    position: absolute;
-    top: 94%;
-    left: 10%;
-    border: solid #F4F6F6;
-    z-index: 1;
-}
-#opinion{
-    background-color: gold;
-    color: black;
-    padding: 1em;
-    border-top: solid black;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-section#opinion h1{
-    padding: 1.5em;
-    font-size: 2em;
-    text-decoration: underline;
-}
-label.opciones{
-    color: black;
-    background-color: gold;
-}
-form label, form p{
-    background-color: black;
-    color: white;
-    padding: 0.5em;
-    margin-right: 0px;
-    width: fit-content;
-    padding: 1em;
-}
-form input{
-    padding: 0.5em;
-    margin-left: 0px;
-    background-color: gold;
-    border:none;
-    border-bottom: solid black;
-}
-form input:hover{
-    border-bottom: solid red;
-}
-section#mivi{
-    display: grid;
-    grid: 1fr 1fr/1fr 0.888fr;
-    width: 100%;
-    height: fit-content;
-}
-section#mivi img{
-    max-width: 100%;
-    padding-bottom: 0%;
-}
-section#mivi div{
-    background-color: gold;
-    padding: 5%;
-    text-align: center;
-}
-section#mivi div h2{
-    font-size: 3em;
-}
-section#mivi div p{
-    font-size: 2.4em;
-}
-div.mision{
-    grid-area: 1/1/1/1;
-}
-img.mision{
-    grid-area: 1/2/1/2;
-}
-img.vision{
-    grid-area: 2/1/2/1;
-}
-div.vision{
-    grid-area: 2/2/2/2;
-}
-#submit{
-    color: white;
-    background-color: black;
-    font-weight: bolder;
-    cursor: pointer;
-    padding: 1em;
-}
-footer{
-    background-color: #F4F6F6;
-    padding: 10px;
+@media (max-width:700px){
+    *{
+        margin: 0px;
+        font-family: "titulo";
+    }
+    #menu{
+        display: inline-flex;
+        position:fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 3;
+        align-items: center;
+    }
+    #menu a{
+        padding: 19.8px 50px;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+    #menu a:hover{
+        color: white;
+    }
+    #lmitos{
+        background-color: palevioletred !important;
+    }
+    #lactua{
+        background-color: powderblue !important;
+    }
+    #lcontacto{
+        background-color: sandybrown !important;
+    }
+    body{
+        margin: 0px;
+    }
+    header{
+        position: sticky;
+        top: 0px;
+        display:inline-flex;
+        width: 100%;
+        z-index: 2;
+    }
+    #nombre{
+        width: 100%;
+        padding: 10px 50px;
+        background-color: #F4F6F6;
+        position: sticky;
+        top:  0px;
+        display:inline-flex;
+    }
+    #nombre h1 em{
+        color: gold;
+        background-color: black;
+        padding: 0.05em 0.2em;
+    }
+    header img{
+        max-height: 2.4em;
+        margin-right: 2.5em;
+    }
+    nav{
+        position: relative;
+        top: 0%;
+        margin-top: 0px;
+        background-image: url(../imagenes/fondo.png);
+        background-size: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    #titulo{
+        color: white;
+        font-size: 6em;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        text-align: center;
+        font-size: 3em;
+    }
+    em{
+        color: gold;
+        font-style: normal;
+    }
+    nav p{
+        color: white;
+        font-size: 1em;
+        font-style: italic;
+        margin: 0% 5%;
+        flex-shrink: 8;
+        text-align: center;
+    }
+    nav p em{
+        font-style: normal;
+    }
+    nav a{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        border: solid #F4F6F6;
+        z-index: 1;
+    }
+    #opinion{
+        background-color: gold;
+        color: black;
+        padding: 1em;
+        border-top: solid black;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        line-height: 2em;
+    }
+    section#opinion h1{
+        padding: 1.5em;
+        font-size: 2em;
+        text-decoration: underline;
+    }
+    label.opciones{
+        color: black;
+        background-color: gold;
+    }
+    form label, form p{
+        background-color: black;
+        color: white;
+        padding: 0.5em;
+        margin-right: 0px;
+        width: fit-content;
+        padding: 1em;
+    }
+    form input{
+        padding: 0.5em;
+        margin-left: 0px;
+        background-color: gold;
+        border:none;
+        border-bottom: solid black;
+    }
+    form input:hover{
+        border-bottom: solid red;
+    }
+    section#mivi{
+        display: flex;
+        grid: 1fr 1fr/1fr 0.888fr;
+        width: 100%;
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+    section#mivi img{
+        max-width: 100%;
+        padding-bottom: 0%;
+    }
+    section#mivi div{
+        background-color: gold;
+        padding: 5%;
+        text-align: center;
+        width: 100%;
+    }
+    section#mivi div h2{
+        font-size: 3em;
+    }
+    section#mivi div p{
+        font-size: 2.4em;
+    }
+    #submit{
+        color: white;
+        background-color: black;
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 1em;
+    }
+    footer{
+        background-color: #F4F6F6;
+        padding: 10px;
+    }
 }

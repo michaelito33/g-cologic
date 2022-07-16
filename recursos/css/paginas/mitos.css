@@ -17,3 +17,60 @@ nav p{
 section{
     width: 100%;
 }
+section#mitos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+.contenedormito{
+    display: grid;
+    grid: 1fr 1fr/1fr 1fr;
+    color: white;
+    border: solid white;
+}
+.contenedormito h3{
+    text-decoration: underline;
+}
+h3.mito{
+    grid-area: 1/1/1/1;
+}
+p.mito{
+    grid-area: 2/1/2/1;
+}
+h3.realidad{
+    grid-area: 1/2/1/2;
+}
+p.realidad{
+    grid-area: 2/2/2/2;
+}
+.mito, .realidad{
+    text-align: center;
+    padding: 0.5em;
+}
+#desafios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: gold;
+    width: 100%;
+    align-items: center;
+}
+section#desafios div{
+    color: black;
+    text-align: center;
+    margin: 3em;
+    padding: 1em;
+}
+section#desafios h3{
+    text-decoration: underline;
+}
+section#desafios img{
+    max-height: 7.5em;
+    padding: 1em;
+    flex-shrink: 0;
+    padding: 0%;
+}
