@@ -1,0 +1,19 @@
+a#home{
+    position: fixed; top: 0px; right: 0px;
+    padding: 0px 0.5em;
+}
+nav{
+    background-image: url(../../imagenes/piggy-5240704.jpg);
+}
+#titulo{
+    color: black;
+    -webkit-text-stroke: 0.0001em white;
+}
+nav p{
+    color: black;
+    background-color: white;
+    padding: 0.8em;
+}
+section{
+    width: 100%;
+}
