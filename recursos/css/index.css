@@ -105,6 +105,7 @@ nav a{
     text-align: center;
     color: black;
     padding: 1em;
+    border-top: solid black;
 }
 section#opinion h1{
     padding: 1.5em;
