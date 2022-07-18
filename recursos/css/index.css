@@ -2,7 +2,7 @@
     font-family: "titulo";
     src: url(../fuentes/RobotoCondensed-Regular.ttf);
 }
-@media (min-width:700px){
+@media (min-width:950px){
     *{
         margin: 0px;
         font-family: "titulo";
@@ -128,14 +128,14 @@
         width: fit-content;
         padding: 1em;
     }
-    form input{
+    form textarea{
         padding: 0.5em;
         margin-left: 0px;
         background-color: gold;
         border:none;
         border-bottom: solid black;
     }
-    form input:hover{
+    form textarea:hover{
         border-bottom: solid red;
     }
     section#mivi{
@@ -183,7 +183,7 @@
         padding: 10px;
     }
 }
-@media (max-width:700px){
+@media (max-width:950px){
     *{
         margin: 0px;
         font-family: "titulo";
@@ -311,14 +311,14 @@
         width: fit-content;
         padding: 1em;
     }
-    form input{
+    form textarea{
         padding: 0.5em;
         margin-left: 0px;
         background-color: gold;
         border:none;
         border-bottom: solid black;
     }
-    form input:hover{
+    form textarea:hover{
         border-bottom: solid red;
     }
     section#mivi{
