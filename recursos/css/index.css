@@ -2,6 +2,9 @@
     font-family: "titulo";
     src: url(../fuentes/RobotoCondensed-Regular.ttf);
 }
+div{
+        background-color: golden
+    }
 @media (min-width:950px){
     *{
         margin: 0px;
